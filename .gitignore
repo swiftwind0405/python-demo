@@ -17,6 +17,7 @@ dist/
 # IDE / editor files
 .DS_Store
 .vscode/
+.idea/
 
 # uv caches
 .uv/

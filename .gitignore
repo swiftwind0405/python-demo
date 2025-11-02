@@ -21,3 +21,9 @@ dist/
 
 # uv caches
 .uv/
+
+# Generated artifacts
+outputs/
+
+# test files
+test/

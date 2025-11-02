@@ -1,0 +1,22 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.env/
+.venv/
+env/
+venv/
+
+# Build / packaging artifacts
+build/
+dist/
+*.egg-info/
+*.spec
+
+# IDE / editor files
+.DS_Store
+.vscode/
+
+# uv caches
+.uv/

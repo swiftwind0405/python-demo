@@ -24,7 +24,10 @@ from openpyxl.utils.datetime import CALENDAR_MAC_1904, CALENDAR_WINDOWS_1900, fr
 
 
 DAY_MINUTES = 24 * 60
-BASE_DIR = Path(__file__).resolve().parent
+if getattr(sys, "frozen", False):  # running as bundled executable
+    BASE_DIR = Path(sys.executable).resolve().parent
+else:
+    BASE_DIR = Path(__file__).resolve().parent
 OUTPUT_ROOT = BASE_DIR / "outputs"
 REST_BREAKS: Tuple[Tuple[int, int, str], ...] = (
     (11 * 60 + 30, 12 * 60, "11:30-12:00"),
